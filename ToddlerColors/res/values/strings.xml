@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">ToddlerColors</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_toddler_main">ToddlerMain</string>
+    <string name="main_title">Welcome to Toddler Colors!</string>
+    <string name="color_game1">Fruits and Colors</string>
+    <string name="color_game2">Vegetables and Colors</string>
+    <string name="color_game3">Match Colors</string>
+    <string name="about">About Toddler Colors</string>
+    <string name="about_text">\Toddler Colors is all about colors where toddlers can learn and associate
+     colors with day-to-day objects that they see around them like fruits and vegetables.
+     This will also help them learn to recognize those common objects 
+     and find similarity between those objects based on color . 
+     Example: 
+     Apple is a fruit.
+     Tomato is a vegetable.
+     Both are red in color.
+    </string>
+    <string name="music_title">Music</string>
+    <string name="music_summary">Play Background music</string>
+
+</resources>

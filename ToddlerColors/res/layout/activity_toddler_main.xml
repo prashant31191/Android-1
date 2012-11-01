@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background ="@color/red_button"
+    android:padding="30dip"> 
+    <TextView
+        android:text="@string/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dip"
+        tools:context=".ToddlerMain" />
+   <!--  <ImageView 
+        android:id="@+id/img1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/apple" />--> 
+    <Button
+        android:id="@+id/color_game1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_game1" 
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_custom"/>
+       <!--   android:src="@drawable/apple"
+        android:scaleType="fitStart"
+        android:drawableLeft="@drawable/apple"--> 
+            <!--  android:background="@color/yellow_button"-->
+    <Button 
+        android:id="@+id/color_game2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_game2" 
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_custom"/>
+        <!--android:drawableLeft="@drawable/tomato"-->     
+    <Button 
+        android:id="@+id/color_game3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_game3"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_custom"/>
+        <!-- android:drawableLeft="@drawable/apple"
+    	android:drawableRight="@drawable/tomato" -->
+    <Button 
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/button_custom"/>
+</LinearLayout>
