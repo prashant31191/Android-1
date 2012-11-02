@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background ="@color/red_button"
+    android:padding="15dip"> 
+    <TextView
+        android:text="@string/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dip"
+        tools:context=".ToddlerMain" />
+    
+      <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  	 <ImageView 
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/apple" 
+        android:adjustViewBounds="true"/>
+  	 
+  	 <LinearLayout 
+      			 android:orientation="vertical"
+      			 android:layout_width="wrap_content"
+    			 android:layout_height="match_parent">
+
+	  <RadioGroup android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/group1">
+			<!--  android:textColor="#ffffff"-->
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:textStyle="italic" 
+				android:id="@+id/question"
+				android:textSize="20sp"
+				android:text="@string/question1"/>
+			<RelativeLayout 
+      			 android:orientation="horizontal"
+      			 android:layout_width="fill_parent"
+    			 android:layout_height="fill_parent">
+
+			<RadioButton
+			    android:id="@+id/answer1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:checked="false"
+			    android:text="@string/qans1" />
+			
+			<RadioButton
+			    android:id="@+id/answer2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:checked="false"
+			    android:text="@string/qans2"
+			    android:layout_toRightOf="@+id/answer1"/>
+			
+			<RadioButton
+			    android:id="@+id/answer3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:checked="false"
+			    android:text="@string/qans3" 
+			    android:layout_toRightOf="@+id/answer2"/>
+
+			</RelativeLayout>
+			
+	  </RadioGroup>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:text="@string/next"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        />
+  </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+   
+</LinearLayout>

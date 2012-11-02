@@ -19,9 +19,13 @@ public class ToddlerMain extends Activity {
     	switch(v.getId())
         {
         case R.id.about:
-     	   Intent i = new Intent(ToddlerMain.this,AboutToddlerColors.class);
-     	   startActivity(i);
-     	   break;
+        	Intent i = new Intent(ToddlerMain.this,AboutToddlerColors.class);
+      	   startActivity(i);
+      	   break;
+        case R.id.color_game1:
+        	Intent i1 = new Intent(ToddlerMain.this,FruitsAndColors.class);
+      	   startActivity(i1);
+      	   break;
      	   
         }
     }
