@@ -26,5 +26,6 @@
     <string name="qans2">BLUE</string>
     <string name="qans3">GREEN</string>
     <string name="fruits">Fruits and Colors</string>
+    <string name="question2">What is the color of the tomato?</string>
 
 </resources>

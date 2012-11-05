@@ -2,9 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red_button"
     android:orientation="vertical"
-    android:background ="@color/red_button"
-    android:padding="15dip"> 
+    android:padding="15dip"
+    android:visibility="visible" >
+ 
     <TextView
         android:text="@string/main_title"
         android:layout_width="wrap_content"
@@ -74,17 +76,18 @@
 	  </RadioGroup>
 
   <LinearLayout
-      android:orientation="horizontal"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+       >
 
     <Button
         android:id="@+id/back"
-        android:text="@string/back"
-        android:layout_height="wrap_content"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        />
+        android:text="@string/back"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/next"

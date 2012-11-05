@@ -63,6 +63,7 @@ public final class R {
         public static final int qans2=0x7f06000f;
         public static final int qans3=0x7f060010;
         public static final int question1=0x7f06000d;
+        public static final int question2=0x7f060012;
         public static final int title_activity_toddler_main=0x7f060002;
     }
     public static final class style {
