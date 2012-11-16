@@ -35,7 +35,11 @@
         </activity>
          <activity
             android:name="com.toddlercolors.main.FruitsAndColors"
-            android:label="@string/fruits">
+            android:label="@string/color_game1">
+        </activity>
+                 <activity
+            android:name="com.toddlercolors.main.VeggiesAndColors"
+            android:label="@string/color_game2">
         </activity>
     </application>
 

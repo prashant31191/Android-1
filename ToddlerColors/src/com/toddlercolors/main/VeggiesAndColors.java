@@ -24,7 +24,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class FruitsAndColors extends Activity {
+public class VeggiesAndColors extends Activity {
 	
 	private Context mcontext;
 	private Questions quest = new Questions();
@@ -39,7 +39,7 @@ public class FruitsAndColors extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        quest.addGame1Questions();
+        quest.addGame2Questions();
         setContentView(R.layout.play_game1);
        //Log.i("savedinstance","i"+index);
        //Log.i("s","i"+savedInstanceState.getInt(index));
@@ -109,8 +109,6 @@ public class FruitsAndColors extends Activity {
     {
     	Log.i("onckec","listen");
        RadioGroup rgrp = (RadioGroup) findViewById(R.id.group1);
-      // int checkedId = rgrp.getCheckedRadioButtonId();
-       
         
     	rgrp.setOnCheckedChangeListener(new OnCheckedChangeListener() 
     	    {
@@ -118,18 +116,17 @@ public class FruitsAndColors extends Activity {
 
 				@Override
 				public void onCheckedChanged(RadioGroup group, int checkedId) {
-					//group = (RadioGroup) findViewById(R.id.group1);
+					group = (RadioGroup) findViewById(R.id.group1);
 					Button button = (Button) findViewById(R.id.next);
-					
+					checkedId = group.getCheckedRadioButtonId();
 					Log.i("check","c1"+checkedId);
-					if(checkedId != -1) 
+					if((checkedId != -1))
 					{
 						RadioButton radiobutton = (RadioButton)findViewById(checkedId);
 						Log.i("check","c2"+checkedId);
-						
-						// TODO Auto-generated method stub
 						if (radiobutton.isChecked())//Bug 4875
 						{
+							// TODO Auto-generated method stub
 							if(radiobutton.getText() ==  getString(quest.getcurrentQuestion().getAnswer()))
 							{
 								(Toast.makeText(getApplicationContext(), "Yippie! Your answer is correct!", Toast.LENGTH_SHORT)).show();
@@ -206,17 +203,6 @@ public class FruitsAndColors extends Activity {
 			 finish();
 		 }*/
 		 Log.i("test","grp");
-		 
-		/* int checkedId =rgrp.getCheckedRadioButtonId();
-		 if((checkedId != -1))
-			{
-		 RadioButton radiobutton = (RadioButton)findViewById(checkedId);
-		 if(radiobutton.isChecked())
-			 {Log.i("ch","c");
-			 radiobutton.setChecked(false);
-			 //rgrp.clearCheck();
-			 }
-			}*/
 		rgrp.clearCheck();
 		Log.i("test","clear");
 		button.setVisibility(View.INVISIBLE);

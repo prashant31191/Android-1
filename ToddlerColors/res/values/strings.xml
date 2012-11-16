@@ -21,11 +21,20 @@
     <string name="music_summary">Play Background music</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
-    <string name="question1">What is the color of the apple?</string>
+    <string name="question1">What color is the apple?</string> 
+    <string name="question2">What color is the banana?</string>
+    <string name="question3">What color are the grapes?</string>
+    <string name="question4">What color is the kiwi?</string>
+    <string name="question5">What color is the orange?</string>
+    <string name="question11">What color is the tomato?</string> 
+    <string name="question12">What color is the lemon?</string>
+    <string name="question13">What color are the eggplant?</string>
+    <string name="question14">What color is the broccoli?</string>
+    <string name="question15">What color is the carrot?</string>
     <string name="qans1">RED</string>
-    <string name="qans2">BLUE</string>
+    <string name="qans2">PURPLE</string>
     <string name="qans3">GREEN</string>
-    <string name="fruits">Fruits and Colors</string>
-    <string name="question2">What is the color of the tomato?</string>
+    <string name="qans4">YELLOW</string>
+    <string name="qans5">ORANGE</string>    
 
 </resources>

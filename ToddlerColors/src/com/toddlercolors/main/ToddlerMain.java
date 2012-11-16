@@ -26,6 +26,10 @@ public class ToddlerMain extends Activity {
         	Intent i1 = new Intent(ToddlerMain.this,FruitsAndColors.class);
       	   startActivity(i1);
       	   break;
+        case R.id.color_game2:
+        	Intent i2 = new Intent(ToddlerMain.this,VeggiesAndColors.class);
+      	   startActivity(i2);
+      	   break;
      	   
         }
     }
