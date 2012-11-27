@@ -2,6 +2,7 @@ package com.toddlercolors.main;
 
 
 import com.example.toddlercolors.R;
+import com.toddlercolors.model.Music;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -29,6 +30,10 @@ public class ToddlerMain extends Activity {
         case R.id.color_game2:
         	Intent i2 = new Intent(ToddlerMain.this,VeggiesAndColors.class);
       	   startActivity(i2);
+      	   break;
+        case R.id.color_game3:
+        	Intent i3 = new Intent(ToddlerMain.this,MatchColors.class);
+      	   startActivity(i3);
       	   break;
      	   
         }
@@ -65,6 +70,22 @@ public class ToddlerMain extends Activity {
                 buttonClick(v); }  
             });
         
+    }
+    	
+    @Override
+    public void onResume()
+    {
+    	super.onResume();
+    	Music.play(this, R.raw.music);
+    	
+    }
+    
+    @Override
+    public void onPause()
+    {
+    	super.onPause();
+    	Music.stop(this);
+    	
     }
 
     @Override
