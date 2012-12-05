@@ -11,7 +11,7 @@ public class Position {
 
     public int getPosition()
     {
-        return startpos;
+        return this.startpos;
     }
 
 }

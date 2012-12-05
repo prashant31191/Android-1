@@ -13,8 +13,8 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
     private Integer[] mThumbIds = {
-            R.drawable.apple, R.drawable.tomato,R.drawable.banana,R.drawable.lemon,R.drawable.kiwi,R.drawable.broccoli,
-            R.drawable.grapes,R.drawable.eggplant,R.drawable.orange,R.drawable.carrot
+            R.drawable.apple,R.drawable.banana,R.drawable.kiwi, R.drawable.grapes,R.drawable.broccoli,R.drawable.carrot,R.drawable.tomato
+           ,R.drawable.orange,R.drawable.eggplant,R.drawable.lemon
     };
 
     public ImageAdapter(Context c) {
@@ -42,12 +42,12 @@ public class ImageAdapter extends BaseAdapter {
         return position;
     }
     public Integer[] replaceItems(int startposition, int dropposition) {
-    	Log.i("drop","drp"+mThumbIds[dropposition]);
+    	//Log.i("drop","drp"+mThumbIds[dropposition]);
     	Integer temp = mThumbIds[dropposition];
         mThumbIds[dropposition] = mThumbIds[startposition];
-        Log.i("drop","aftdrp"+mThumbIds[dropposition]);
+        //Log.i("drop","aftdrp"+mThumbIds[dropposition]);
         mThumbIds[startposition]=temp;
-        Log.i("drop","start"+mThumbIds[startposition]);
+        //Log.i("drop","start"+mThumbIds[startposition]);
         return mThumbIds;
     }
 
